@@ -1,9 +1,13 @@
 # Парсер сайта ozon.ru и тг бот
 
 ### Структура проекта:
+
 **парсер** - main.py > get_product_info.py > clickhouse.py
+
 **тг бот** - tg_bot.py
+
 **шедулер** - airflow - pars_exec_dag.py
+
 **Создаем виртуальное окружение и активируем его. Устанавливаем нужные библиотеки для проекта**
 ```
 pip install beautifulsoup4
