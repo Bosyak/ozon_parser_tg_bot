@@ -11,7 +11,6 @@
 **Создаем виртуальное окружение и активируем его. Устанавливаем нужные библиотеки для проекта**
 ```
 pip install beautifulsoup4
-pip install curl_cffi
 pip install selenium
 pip install selenium-stealth
 pip install webdriver-manager
