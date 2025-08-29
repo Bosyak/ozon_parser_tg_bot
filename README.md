@@ -18,6 +18,11 @@ pip install --upgrade selenium webdriver-manager
 pip install aiogram
 pip install clickhouse_connect
 ```
+**Устанавливаем Google Chrome**
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
 **Также нам понадобится файл config.py:**
 ```
 CLICKHOUSE_CONFIG = {
