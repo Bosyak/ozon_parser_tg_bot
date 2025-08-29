@@ -19,7 +19,7 @@ def calculate_product_info(driver, url):
         # JSON-страница
         url_prod = "https://www.ozon.ru/api/composer-api.bx/page/json/v2?url=" + url
         driver.get(url_prod)
-        time.sleep(1.0)
+        time.sleep(0.3)
 
         response_content = driver.execute_script("return document.body ? document.body.innerText : '';") or ""
         if len(response_content) < 1000:
@@ -91,7 +91,7 @@ def calculate_product_info(driver, url):
         print("rating:", rating)
 
     finally:
-        time.sleep(2)
+        time.sleep(0.5)
         driver.close()
         driver.switch_to.window(original_window)
     return product_id, title, description, card_price, offers_price, offers_priceCurrency, sku, rating
